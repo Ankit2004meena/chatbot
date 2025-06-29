@@ -1,0 +1,60 @@
+You: hi
+Bot: Hi! How are you feeling today?
+
+You: how are you
+Bot: Hey! What can I do for you?
+
+You: chal be
+Bot: Hello! How can I assist you today?
+
+You: bye
+Bot: Goodbye! Have a great day!
+
+You: bye
+Bot: Goodbye! Have a great day!
+
+You: what is your name
+Bot: Nice to meet you. So tell me. How do you feel today?
+
+You: who are you
+Bot: Hello! How may I assist you?
+
+You: what you can do
+Bot: Greetings! I'm an AI chatbot created to offer personalized guidance on fitness, nutrition, and recovery strategies.
+
+You: tell about fitness
+Bot: Hello! How may I assist you?
+
+You: nutrition
+Bot: Hello! How can I assist you today?
+
+You: good afternoon
+Bot: Hey! What can I do for you?
+
+You: good afternoon
+Bot: Good morning. I hope you had a good night's sleep. How are you feeling today? 
+
+You: good afternoon
+Bot: Hi there! How can I help you?
+
+You: How to treat skin infection acquired at the gym?
+Bot: Keep the affected area clean and dry. Apply over-the-counter antifungal or antibacterial ointments as directed, and consider covering the area with a bandage to prevent further irritation.
+
+You: How to treat skin infection acquired at the gym?
+Bot: Keep the affected area clean and dry. Apply over-the-counter antifungal or antibacterial ointments as directed, and consider covering the area with a bandage to prevent further irritation.
+
+You: How to treat skin infection acquired at the gym?
+Bot: Keep the affected area clean and dry. Apply over-the-counter antifungal or antibacterial ointments as directed, and consider covering the area with a bandage to prevent further irritation.
+
+You: How to treat skin infection acquired at the gym?
+Bot: Keep the affected area clean and dry. Apply over-the-counter antifungal or antibacterial ointments as directed, and consider covering the area with a bandage to prevent further irritation.
+
+You: how to treat gym injury
+Bot: I'm not sure how to respond to that. Can you please rephrase your question?
+
+You: treatment for pain due to gym
+Bot: Experiencing back pain from gym workouts can be challenging, but here are some remedies For lower back strain, rest is crucial. Apply ice packs for 15-20 minutes every few hours to reduce inflammation and pain.
+
+You: what to do in back pain
+Bot: 1)For an adult or child, place the heel of one hand on the center of the chest at the nipple line. You can also push with one hand on top of the other. For an infant, place two fingers on the breastbone. 2)For an adult or child, press down at least 2 inches. Make sure not to press on ribs. For an infant, press down about 1 and 1/2 inches. Make sure not to press on the end of the breastbone. 3)Do chest compressions only, at the rate of 100-120 per minute or more. Let the chest rise completely between pushes. 4)Check to see if the person has started breathing.
+

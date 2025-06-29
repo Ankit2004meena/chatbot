@@ -1,13 +1,19 @@
-
 import os
 from dotenv import load_dotenv
-from langchain_community.vectorstores import FAISS
+#from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import CSVLoader
-from langchain.embeddings import HuggingFaceEmbeddings
+#from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.prompts import PromptTemplate
-from langchain.chains import RetrievalQA
+#from langchain.chains import RetrievalQA
 from langchain.llms import GooglePalm
+from google.ai.generativelanguage_v1beta.types import content
+print(dir(content))
 
+
+from langchain.vectorstores import FAISS
+from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.chains.retrieval_qa.base import RetrievalQA
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 # Load API keys
 load_dotenv()

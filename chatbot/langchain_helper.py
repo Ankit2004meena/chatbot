@@ -12,7 +12,7 @@ load_dotenv()
 
 # ✅ Paths
 
-csv_path= os.path.join("C:\\Users", "Ankur", "Desktop", "Nullclass 2nd project", "mine", "chatbot", "dataset", "dataset.csv")
+csv_path = "dataset/dataset.csv"
 
 vectordb_file_path = "faiss_index"
 

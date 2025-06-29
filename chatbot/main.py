@@ -31,6 +31,15 @@ if question:
 # python-dotenv==1.0.1
 # dotenv
 
+# langchain-community==0.2.1
+# streamlit
+# sentence-transformers==2.2.2
+# huggingface-hub==0.16.4
+# transformers==4.29.2
+# faiss-cpu
+# google-generativeai==0.3.2
+# python-dotenv
+# langchain
 
 
 

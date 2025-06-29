@@ -16,6 +16,21 @@ if question:
     st.write(response["result"])
 
 
+
+
+
+
+# langchain-community==0.2.3
+# langchain==0.2.3
+# langchain-google-genai==1.0.10
+# streamlit==1.35.0
+# sentence-transformers==2.2.2
+# huggingface-hub==0.16.4
+# transformers==4.29.2
+# faiss-cpu==1.7.4
+# python-dotenv==1.0.1
+# dotenv
+
 # langchain-community==0.2.1
 # streamlit
 # sentence-transformers==2.2.2
@@ -25,12 +40,6 @@ if question:
 # google-generativeai==0.3.2
 # python-dotenv
 # langchain
-
-
-
-
-
-
 
 
 

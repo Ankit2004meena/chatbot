@@ -46,7 +46,7 @@ def create_vector_db():
 
     # Create new FAISS vector DB
     vectordb = FAISS.from_documents(data, embedding=embedding_model)
-    vectordb.save_local(vectordb_file_path)
+    vectordb.save_local(folder_path=vectordb_file_path)
     print("✅ Vector DB created and saved.")
 
 # 📌 Load vector DB and build RetrievalQA chain

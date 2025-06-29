@@ -18,7 +18,7 @@ vectordb_file_path = "faiss_index"
 
 # Embedding model
 embedding_model = HuggingFaceEmbeddings(model_name="intfloat/e5-small")
-print("GOOGLE_API_KEY:", os.getenv("GOOGLE_API_KEY"))
+
 
 # LLM
 from langchain_google_genai import ChatGoogleGenerativeAI

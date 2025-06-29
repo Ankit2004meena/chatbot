@@ -11,7 +11,9 @@ from langchain_community.document_loaders import CSVLoader
 load_dotenv()
 
 # ✅ Paths
-csv_path = r"C:\Users\Ankur\Desktop\Nullclass 2nd project\mine\chatbot\dataset\dataset.csv"
+
+csv_path= os.path.join("C:\\Users", "Ankur", "Desktop", "Nullclass 2nd project", "mine", "chatbot", "dataset", "dataset.csv")
+
 vectordb_file_path = "faiss_index"
 
 # ✅ Embedding model

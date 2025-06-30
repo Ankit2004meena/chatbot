@@ -27,7 +27,11 @@ llm = ChatGoogleGenerativeAI(
 
 # ✅ Create FAISS vector DB
 def create_vector_db():
-    loader = CSVLoader(file_path=csv_path, source_column="prompt")
+    loader = CSVLoader(
+        file_path=csv_path,
+        source_column="prompt",
+        encoding="ISO-8859-1"  # 👈 Fix: allow Latin-1 / Windows encoding
+    )
     data = loader.load()
     vectordb = FAISS.from_documents(data, embedding=embedding_model)
     vectordb.save_local(folder_path=vectordb_file_path)

@@ -12,7 +12,7 @@ load_dotenv()
 
 # ✅ Paths
 
-csv_path = "dataset/dataset.csv"
+csv_path = "chatbot/dataset/dataset.csv"
 vectordb_file_path = "faiss_index"
 
 # ✅ Embedding model

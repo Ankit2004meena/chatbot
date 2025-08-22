@@ -82,40 +82,40 @@ if __name__ == "__main__":
     result = qa("Hello?")
     print("Answer:", result["result"])
 
-# =======================
-#  Article Generator Part
-# =======================
-from transformers import pipeline
+# # =======================
+# #  Article Generator Part
+# # =======================
+# from transformers import pipeline
 
-# Load 3 open-source LLMs (you can change to smaller ones if GPU is limited)
-llama = pipeline(
-    "text-generation",
-    model="meta-llama/Meta-Llama-3-8B-Instruct",
-    device=0
-)
+# # Load 3 open-source LLMs (you can change to smaller ones if GPU is limited)
+# llama = pipeline(
+#     "text-generation",
+#     model="meta-llama/Meta-Llama-3-8B-Instruct",
+#     device=0
+# )
 
-mistral = pipeline(
-    "text-generation",
-    model="mistralai/Mistral-7B-Instruct-v0.3",
-    device=0
-)
+# mistral = pipeline(
+#     "text-generation",
+#     model="mistralai/Mistral-7B-Instruct-v0.3",
+#     device=0
+# )
 
-qwen = pipeline(
-    "text-generation",
-    model="Qwen/Qwen2-7B-Instruct",
-    device=0
-)
+# qwen = pipeline(
+#     "text-generation",
+#     model="Qwen/Qwen2-7B-Instruct",
+#     device=0
+# )
 
-def generate_article(model_pipeline, topic, tone="informative", length=300):
-    """Generate article from one model."""
-    prompt = f"Write a {length}-word {tone} article on '{topic}'. Use headings and a conclusion."
-    output = model_pipeline(prompt, max_new_tokens=length // 2, do_sample=True, temperature=0.7)
-    return output[0]["generated_text"]
+# def generate_article(model_pipeline, topic, tone="informative", length=300):
+#     """Generate article from one model."""
+#     prompt = f"Write a {length}-word {tone} article on '{topic}'. Use headings and a conclusion."
+#     output = model_pipeline(prompt, max_new_tokens=length // 2, do_sample=True, temperature=0.7)
+#     return output[0]["generated_text"]
 
-def generate_with_all_models(topic, tone="informative", length=300):
-    """Generate article from all 3 models."""
-    return {
-        "LLaMA-3": generate_article(llama, topic, tone, length),
-        "Mistral": generate_article(mistral, topic, tone, length),
-        "Qwen2": generate_article(qwen, topic, tone, length),
-    }
+# def generate_with_all_models(topic, tone="informative", length=300):
+#     """Generate article from all 3 models."""
+#     return {
+#         "LLaMA-3": generate_article(llama, topic, tone, length),
+#         "Mistral": generate_article(mistral, topic, tone, length),
+#         "Qwen2": generate_article(qwen, topic, tone, length),
+#     }

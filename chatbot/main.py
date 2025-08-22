@@ -1,20 +1,52 @@
+# import streamlit as st
+# from langchain_helper import get_qa_chain, create_vector_db
+
+# st.title("CUSTOMER SERVICE CHATBOT 🤖")
+
+# if st.button("Create Knowledgebase"):
+#     create_vector_db()
+
+# question = st.text_input("Question:")
+
+# if question:
+#     chain = get_qa_chain()
+#     response = chain(question)
+
+#     st.header("Answer")
+#     st.write(response["result"])
+
 import streamlit as st
-from langchain_helper import get_qa_chain, create_vector_db
+from langchain_helper import get_qa_chain, create_vector_db, generate_with_all_models
 
-st.title("CUSTOMER SERVICE CHATBOT 🤖")
+st.title("CUSTOMER SERVICE CHATBOT 🤖 + ARTICLE GENERATOR 📝")
 
-if st.button("Create Knowledgebase"):
-    create_vector_db()
+tab1, tab2 = st.tabs(["Chatbot", "Article Generator"])
 
-question = st.text_input("Question:")
+# ---------------- Chatbot Tab ----------------
+with tab1:
+    if st.button("Create Knowledgebase"):
+        create_vector_db()
 
-if question:
-    chain = get_qa_chain()
-    response = chain(question)
+    question = st.text_input("Question:")
 
-    st.header("Answer")
-    st.write(response["result"])
+    if question:
+        chain = get_qa_chain()
+        response = chain(question)
+        st.header("Answer")
+        st.write(response["result"])
 
+# ---------------- Article Generator Tab ----------------
+with tab2:
+    topic = st.text_input("Enter a topic for the article:")
+    tone = st.selectbox("Tone", ["informative", "technical", "casual", "persuasive"])
+    length = st.slider("Length (words)", 200, 1000, 400)
+
+    if st.button("Generate Article"):
+        results = generate_with_all_models(topic, tone, length)
+
+        for model_name, article in results.items():
+            st.subheader(model_name)
+            st.write(article)
 
 
 
